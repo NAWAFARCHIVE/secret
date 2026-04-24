@@ -1,0 +1,39 @@
+{
+  "app": {
+    "name": "internal-tools",
+    "version": "1.3.2",
+    "debug": false
+  },
+  "api": {
+    "url": "https://internal-api.local",
+    "timeout": 5000,
+    "key": "devkey-12345"
+  },
+  "auth": {
+    "jwt_secret": "not_the_real_secret",
+    "session_timeout": 3600
+  },
+  "storage": {
+    "provider": "local",
+    "path": "/var/app/data"
+  },
+  "backup": {
+    "enabled": true,
+    "last_run": "2026-04-20T10:22:00Z",
+    "notes": "encrypted backup stored separately"
+  },
+  "encryption": {
+    "method": "AES-256-CBC",
+    "key_hint": "same as old env variable",
+    "iv": "a1b2c3d4e5f6g7h8"
+  },
+  "archive": {
+    "file": "archive.zip",
+    "password": "REDACTED",
+  },
+  "misc": {
+    "temp_password": "changeme123",
+    "deprecated": true,
+    "notes": "remove before production"
+  }
+}
